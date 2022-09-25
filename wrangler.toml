@@ -1,0 +1,12 @@
+name = "emailer"
+main = "src/index.js"
+compatibility_date = "2022-09-22"
+
+[vars]
+TO_EMAIL = "test@example.com"
+TO_NAME = "Test User"
+FROM_EMAIL = "alerts@example.com"
+FROM_NAME = "Cloudflare Email Alerter"
+
+# TOKEN
+# Run echo <token> | wrangler secret put token
