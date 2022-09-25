@@ -27,6 +27,7 @@ jobs:
         with:
           # Your Cloudflare API Token
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
           # A new line deliminated string of environment variable names that should be configured as Worker secrets
           secrets: |
               TOKEN
