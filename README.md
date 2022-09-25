@@ -50,4 +50,11 @@ A shared-secret is configured to stop anyone from abusing the worker endpoint as
 
 We use Cloudflare Workers "secrets" to store the shared secret and ensure it's not placed in a flat file.
 
-You need to supply the `TOKEN` as the `Authorization` header in requests. eg. `Authorization: secret` otherwise you will receive a 403.
+You need to supply the `TOKEN` as the `Authorization` header in requests (eg. `Authorization: secret`) otherwise you will receive a 403.
+
+### Free email service, how?
+MailChannels offers a free email service to Cloudflare Workers as described at: [https://blog.cloudflare.com/sending-email-from-workers-with-mailchannels/](https://blog.cloudflare.com/sending-email-from-workers-with-mailchannels/)
+
+### SPF Setup
+If you don't want your emails to land in spam, I highly suggest you setup proper SPF records for MailChannels.
+Guide at: [https://mailchannels.zendesk.com/hc/en-us/articles/200262610-Set-up-SPF-Records](https://mailchannels.zendesk.com/hc/en-us/articles/200262610-Set-up-SPF-Records)
